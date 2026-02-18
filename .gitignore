@@ -1,0 +1,33 @@
+*.pdf
+*.docx
+*.md
+
+
+# OS
+
+**/.DS_Store
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Secrets / env
+.env
+.env.*
+!.env.example
+
+# Logs / temp
+*.log
+*.tmp
+
+# TypeScript / Node (если появятся)
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+
+# PHP Composer (если используешь)
+vendor/

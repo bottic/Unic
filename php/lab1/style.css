@@ -1,0 +1,174 @@
+/* Общие параметры страницы: фон, размер шрифта, цвет и семейство шрифта */
+body {
+  margin: 0;
+  background-color: #eef1ff;
+  color: #1f2438;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.page {
+  max-width: 980px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+}
+
+header {
+  padding: 24px;
+  color: #ffffff;
+  background: linear-gradient(120deg, #1f3a8a, #6d28d9);
+}
+
+header h1 {
+  margin: 0 0 6px;
+  font-size: 32px;
+}
+
+header p {
+  margin: 0;
+  text-align: left;
+  text-indent: 0;
+  color: #e8edff;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 12px 24px;
+  background-color: #f4f6ff;
+  border-bottom: 1px solid #d7dcf8;
+}
+
+.menu a {
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.menu a.current {
+  background-color: #e5e9ff;
+}
+
+main {
+  flex: 1;
+  padding: 24px;
+}
+
+h2 {
+  margin-top: 0;
+  color: #2b356d;
+}
+
+p {
+  margin: 0 0 12px;
+  text-align: justify;
+  text-indent: 1.6em;
+}
+
+a:link {
+  color: #0d4f9a;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #6a4d2f;
+  text-decoration: none;
+}
+
+a:active {
+  color: #c62828;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #6d28d9;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin-top: 0;
+}
+
+figure {
+  margin: 16px 0;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  height: 360px;
+  object-fit: contain;
+  margin: 0 auto;
+  background-color: #f6f8ff;
+  border-radius: 10px;
+  border: 1px solid #d2d8f2;
+}
+
+figcaption {
+  margin-top: 6px;
+  font-size: 15px;
+  color: #434b73;
+  text-indent: 0;
+}
+table {
+  width: 100%;
+  margin: 12px 0 18px;
+  border-collapse: collapse;
+  background-color: #fff4e8;
+  font-size: 16px;
+}
+
+th,
+td {
+  border: 1px solid #d7bf95;
+  padding: 10px;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #ffe9cf;
+}
+
+footer {
+  padding: 14px 24px;
+  font-size: 15px;
+  color: #2c3253;
+  background-color: #eef1ff;
+  border-top: 1px solid #d7dcf8;
+}
+
+@media (max-width: 700px) {
+  body {
+    font-size: 16px;
+  }
+
+  header h1 {
+    font-size: 26px;
+  }
+
+  main,
+  header,
+  .menu,
+  footer {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  figure img {
+    height: 220px;
+  }
+}
+
+p::first-letter {
+  color: #4338ca;
+  font-size: 1.35em;
+  font-weight: bold;
+}
