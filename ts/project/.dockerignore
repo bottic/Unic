@@ -1,0 +1,15 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+.vscode/
+.idea/
+.git/
+.gitignore
+qdrant_storage/
+qdrant_data/
+docker-compose*.yaml
+README.md
+tests/
