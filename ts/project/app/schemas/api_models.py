@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 from typing import Optional, Any
-
+from uuid import UUID
 
 class RecommendationRequest(BaseModel):
     query: str
@@ -12,10 +12,23 @@ class RecommendationResponse(BaseModel):
     info: Any
     points: list[Any]
 
+class ExtraText(BaseModel):
+    interests_extra: str
+    music_extra: str
+
 class UpsertRequest(BaseModel):
-    id: int
-    text: str
-    payload: dict[str, Any]
+    user_id: UUID
+    name: str
+    age: int
+    city: str
+    gender: str
+
+    bio: str
+    interests: list[str]
+    music: list[str]
+
+    extra_text: ExtraText
+
 
 class UpsertResponse(BaseModel):
     status: str

@@ -47,7 +47,7 @@ class AsyncVectorStorage:
                 vectors_config=models.VectorParams(size=self.vector_size, distance=models.Distance.DOT),
             )
 
-    """TODO сказать Андрею чтоб передавал диапазон возраста как 'age':'19:21' добавить в позитив тех кого пользователь лайкнул, а в негатив того, ктого он дизлайкнул"""
+    """TODO сказать Андрею чтоб передавал диапазон возраста как 'age':'19:21'"""
     async def recommend(self, positive: list, negative: Optional[list] = None, filters: Optional[dict[str, str]] = None, limit: Optional[int] = 1) -> RecommendResult:
 
         match_fields = []
